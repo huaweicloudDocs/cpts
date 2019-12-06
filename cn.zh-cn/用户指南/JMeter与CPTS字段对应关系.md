@@ -5,7 +5,7 @@ CPTS支持JMeter脚本导入及自动切换。JMeter字段与CPTS字段的对应
 **表 1**  JMeter字段与CPTS字段对应关系
 
 <a name="table9157104912287"></a>
-<table><thead align="left"><tr id="row3157949102811"><th class="cellrowborder" colspan="2" valign="top" id="mcps1.2.5.1.1"><p id="p64711233112911"><a name="p64711233112911"></a><a name="p64711233112911"></a>Jmeter字段</p>
+<table><thead align="left"><tr id="row3157949102811"><th class="cellrowborder" colspan="2" valign="top" id="mcps1.2.5.1.1"><p id="p64711233112911"><a name="p64711233112911"></a><a name="p64711233112911"></a>JMeter字段</p>
 </th>
 <th class="cellrowborder" valign="top" id="mcps1.2.5.1.2"><p id="p1015784910288"><a name="p1015784910288"></a><a name="p1015784910288"></a>CPTS字段</p>
 </th>
@@ -17,7 +17,7 @@ CPTS支持JMeter脚本导入及自动切换。JMeter字段与CPTS字段的对应
 </td>
 <td class="cellrowborder" valign="top" width="24.297570242975702%" headers="mcps1.2.5.1.1 "><p id="p1515718490284"><a name="p1515718490284"></a><a name="p1515718490284"></a>名称</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p16157249102813"><a name="p16157249102813"></a><a name="p16157249102813"></a>事务名称</p>
+<td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p16157249102813"><a name="p16157249102813"></a><a name="p16157249102813"></a>事务名称/任务名称</p>
 </td>
 <td class="cellrowborder" rowspan="3" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p856910382319"><a name="p856910382319"></a><a name="p856910382319"></a>与其下面的HTTP请求组成一个事务。</p>
 <p id="p34232588308"><a name="p34232588308"></a><a name="p34232588308"></a>读取不到有效值时，默认并发个数为1，持续时间为1分钟。</p>
@@ -118,23 +118,18 @@ CPTS支持JMeter脚本导入及自动切换。JMeter字段与CPTS字段的对应
 <tr id="row13160104915287"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p4347194233817"><a name="p4347194233817"></a><a name="p4347194233817"></a>高级选项中的响应超时</p>
 </td>
 </tr>
-<tr id="row1516044982810"><td class="cellrowborder" rowspan="8" valign="top" width="22.87771222877712%" headers="mcps1.2.5.1.1 "><p id="p4160349182816"><a name="p4160349182816"></a><a name="p4160349182816"></a>HTTP请求</p>
+<tr id="row1516044982810"><td class="cellrowborder" rowspan="6" valign="top" width="22.87771222877712%" headers="mcps1.2.5.1.1 "><p id="p4160349182816"><a name="p4160349182816"></a><a name="p4160349182816"></a>HTTP请求</p>
 </td>
 <td class="cellrowborder" valign="top" width="24.297570242975702%" headers="mcps1.2.5.1.1 "><p id="p132361751407"><a name="p132361751407"></a><a name="p132361751407"></a>协议</p>
 </td>
 <td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p12253195144019"><a name="p12253195144019"></a><a name="p12253195144019"></a>协议类型</p>
 </td>
-<td class="cellrowborder" rowspan="8" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p3933153105216"><a name="p3933153105216"></a><a name="p3933153105216"></a>报文，请忽略POST、GET、PATCH、PUT、DELETE以外的请求方法；当读取不到响应超时有效值时默认为5000。</p>
+<td class="cellrowborder" rowspan="6" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p3933153105216"><a name="p3933153105216"></a><a name="p3933153105216"></a>报文。忽略POST、GET、PATCH、PUT、DELETE以外的请求方法；当读取不到响应超时有效值时默认为5000。</p>
 </td>
 </tr>
 <tr id="row416034992815"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p723635144019"><a name="p723635144019"></a><a name="p723635144019"></a>协议、服务器名称或IP、端口号、路径</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1925213519403"><a name="p1925213519403"></a><a name="p1925213519403"></a>请求链接</p>
-</td>
-</tr>
-<tr id="row17160349172817"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1523613512403"><a name="p1523613512403"></a><a name="p1523613512403"></a>端口号</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p19250125134010"><a name="p19250125134010"></a><a name="p19250125134010"></a>-</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1925213519403"><a name="p1925213519403"></a><a name="p1925213519403"></a>请求连接</p>
 </td>
 </tr>
 <tr id="row5160134914285"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p132365518402"><a name="p132365518402"></a><a name="p132365518402"></a>方法</p>
@@ -142,19 +137,14 @@ CPTS支持JMeter脚本导入及自动切换。JMeter字段与CPTS字段的对应
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p10249453402"><a name="p10249453402"></a><a name="p10249453402"></a>请求方法</p>
 </td>
 </tr>
-<tr id="row161614491282"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1023612554012"><a name="p1023612554012"></a><a name="p1023612554012"></a>路径</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1424855104015"><a name="p1424855104015"></a><a name="p1424855104015"></a>-</p>
-</td>
-</tr>
 <tr id="row1616184914282"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1123619517404"><a name="p1123619517404"></a><a name="p1123619517404"></a>参数</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p224715154019"><a name="p224715154019"></a><a name="p224715154019"></a>-</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p224715154019"><a name="p224715154019"></a><a name="p224715154019"></a>根据实际需求，添加到url或报文内容中</p>
 </td>
 </tr>
 <tr id="row10161949102813"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p82361955403"><a name="p82361955403"></a><a name="p82361955403"></a>消息体数据</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p124616511408"><a name="p124616511408"></a><a name="p124616511408"></a>-</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p124616511408"><a name="p124616511408"></a><a name="p124616511408"></a>报文内容</p>
 </td>
 </tr>
 <tr id="row7161194916288"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p8237105144015"><a name="p8237105144015"></a><a name="p8237105144015"></a>高级选项中的响应超时</p>
@@ -168,7 +158,7 @@ CPTS支持JMeter脚本导入及自动切换。JMeter字段与CPTS字段的对应
 </td>
 <td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p111612491283"><a name="p111612491283"></a><a name="p111612491283"></a>报文内容</p>
 </td>
-<td class="cellrowborder" rowspan="12" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p14448480483"><a name="p14448480483"></a><a name="p14448480483"></a>响应提取，只有在HTTP请求下的正则表达式提取器、固定定时器时才会被导入。缺省值为空时，默认取引用名称。</p>
+<td class="cellrowborder" rowspan="12" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p14448480483"><a name="p14448480483"></a><a name="p14448480483"></a>响应提取。只有在HTTP请求下的正则表达式提取器、固定定时器时才会被导入。缺省值为空时，默认取引用名称。</p>
 </td>
 </tr>
 <tr id="row56484131416"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p173821512477"><a name="p173821512477"></a><a name="p173821512477"></a>Body(unescaped)</p>
@@ -234,7 +224,39 @@ CPTS支持JMeter脚本导入及自动切换。JMeter字段与CPTS字段的对应
 </td>
 <td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p087410374517"><a name="p087410374517"></a><a name="p087410374517"></a>持续时间</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p178741135456"><a name="p178741135456"></a><a name="p178741135456"></a>思考时间，读取不到有效值时默认取5000。</p>
+<td class="cellrowborder" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p178741135456"><a name="p178741135456"></a><a name="p178741135456"></a>思考时间。读取不到有效值时默认取1000。</p>
+</td>
+</tr>
+<tr id="row17130132694913"><td class="cellrowborder" valign="top" width="22.87771222877712%" headers="mcps1.2.5.1.1 "><p id="p1213122674912"><a name="p1213122674912"></a><a name="p1213122674912"></a>Random函数</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.297570242975702%" headers="mcps1.2.5.1.1 "><p id="p1413114265492"><a name="p1413114265492"></a><a name="p1413114265492"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p4131162644918"><a name="p4131162644918"></a><a name="p4131162644918"></a>区间随机数</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p91739361751"><a name="p91739361751"></a><a name="p91739361751"></a>根据用户输入区间，随机生成区间内的任一整数。</p>
+<p id="p1913218266498"><a name="p1913218266498"></a><a name="p1913218266498"></a>例如：${__Random(-2147483648,2147483647)}</p>
+</td>
+</tr>
+<tr id="row1250344613613"><td class="cellrowborder" rowspan="3" valign="top" width="22.87771222877712%" headers="mcps1.2.5.1.1 "><p id="p850419461369"><a name="p850419461369"></a><a name="p850419461369"></a>JSON提取器</p>
+<p id="p185021631173811"><a name="p185021631173811"></a><a name="p185021631173811"></a></p>
+<p id="p825511348383"><a name="p825511348383"></a><a name="p825511348383"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="24.297570242975702%" headers="mcps1.2.5.1.1 "><p id="p135041246123613"><a name="p135041246123613"></a><a name="p135041246123613"></a>Name of created variables</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.757224277572245%" headers="mcps1.2.5.1.2 "><p id="p12504184619365"><a name="p12504184619365"></a><a name="p12504184619365"></a>变量名称</p>
+</td>
+<td class="cellrowborder" rowspan="3" valign="top" width="25.067493250674932%" headers="mcps1.2.5.1.3 "><p id="p12504546173614"><a name="p12504546173614"></a><a name="p12504546173614"></a>响应提取，默认提取范围：JSON内的值。只有在HTTP请求下的JSON提取器才会被导入。</p>
+<p id="p32561341383"><a name="p32561341383"></a><a name="p32561341383"></a></p>
+</td>
+</tr>
+<tr id="row650283117387"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p850253116380"><a name="p850253116380"></a><a name="p850253116380"></a>JSON Path expressions</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p9502931103818"><a name="p9502931103818"></a><a name="p9502931103818"></a>需获取的键名</p>
+</td>
+</tr>
+<tr id="row10255834133815"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p8256934133818"><a name="p8256934133818"></a><a name="p8256934133818"></a>Default Values</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1225653418387"><a name="p1225653418387"></a><a name="p1225653418387"></a>缺省值</p>
 </td>
 </tr>
 </tbody>
