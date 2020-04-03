@@ -12,39 +12,37 @@
 
 ## 前提条件<a name="section17723185741610"></a>
 
--   “SvcStg Admin”属于策略，请先在IAM控制台中开通基于策略的访问控制公测，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
--   给用户组授权之前，请您了解用户组可以添加的CPTS权限，并结合实际需求进行选择，CPTS支持的系统权限，请参见[表1](#table20303044164219)。若您需要对除CPTS之外的其它服务授权，IAM支持服务的所有权限请参见[系统权限](https://support.huaweicloud.com/permissions/policy_list.html?product=cpts)。
+给用户组授权之前，请您了解用户组可以添加的CPTS权限，并结合实际需求进行选择，CPTS支持的系统权限，请参见[表1](#table20303044164219)。若您需要对除CPTS之外的其它服务授权，IAM支持服务的所有权限请参见[系统权限](https://support.huaweicloud.com/permissions/policy_list.html?product=cpts)。
 
-    **表 1**  CPTS用户权限
+**表 1**  CPTS用户权限
 
-    <a name="table20303044164219"></a>
-    <table><thead align="left"><tr id="row43038444428"><th class="cellrowborder" valign="top" width="24.43%" id="mcps1.2.3.1.1"><p id="p7303114464213"><a name="p7303114464213"></a><a name="p7303114464213"></a>权限名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="75.57000000000001%" id="mcps1.2.3.1.2"><p id="p4303124415424"><a name="p4303124415424"></a><a name="p4303124415424"></a>权限说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row19304144184220"><td class="cellrowborder" valign="top" width="24.43%" headers="mcps1.2.3.1.1 "><p id="p1730484434218"><a name="p1730484434218"></a><a name="p1730484434218"></a>SvcStg&nbsp;Admin</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="75.57000000000001%" headers="mcps1.2.3.1.2 "><p id="p1530464418424"><a name="p1530464418424"></a><a name="p1530464418424"></a>拥有该权限的用户对CPTS的所有用户下的测试资源具有执行权限（如增删改查），能够操作所有用户的测试资源。</p>
-    </td>
-    </tr>
-    <tr id="row930484414429"><td class="cellrowborder" valign="top" width="24.43%" headers="mcps1.2.3.1.1 "><p id="p8304194414212"><a name="p8304194414212"></a><a name="p8304194414212"></a>SvcStg Developer</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="75.57000000000001%" headers="mcps1.2.3.1.2 "><p id="p330416444422"><a name="p330416444422"></a><a name="p330416444422"></a>拥有该权限的用户只对本用户测试资源具有执行权限（如增删改查）。</p>
-    </td>
-    </tr>
-    <tr id="row1530464410423"><td class="cellrowborder" valign="top" width="24.43%" headers="mcps1.2.3.1.1 "><p id="p7304164410429"><a name="p7304164410429"></a><a name="p7304164410429"></a>SvcStg Operator</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="75.57000000000001%" headers="mcps1.2.3.1.2 "><p id="p43046447424"><a name="p43046447424"></a><a name="p43046447424"></a>拥有该权限的用户只对本用户测试资源具有可读权限。</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+<a name="table20303044164219"></a>
+<table><thead align="left"><tr id="row43038444428"><th class="cellrowborder" valign="top" width="24.43%" id="mcps1.2.3.1.1"><p id="p7303114464213"><a name="p7303114464213"></a><a name="p7303114464213"></a>权限名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="75.57000000000001%" id="mcps1.2.3.1.2"><p id="p4303124415424"><a name="p4303124415424"></a><a name="p4303124415424"></a>权限说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row19304144184220"><td class="cellrowborder" valign="top" width="24.43%" headers="mcps1.2.3.1.1 "><p id="p1730484434218"><a name="p1730484434218"></a><a name="p1730484434218"></a>SvcStg&nbsp;Admin</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.57000000000001%" headers="mcps1.2.3.1.2 "><p id="p1530464418424"><a name="p1530464418424"></a><a name="p1530464418424"></a>拥有该权限的用户对CPTS的所有用户下的测试资源具有执行权限（如增删改查），能够操作所有用户的测试资源。</p>
+</td>
+</tr>
+<tr id="row930484414429"><td class="cellrowborder" valign="top" width="24.43%" headers="mcps1.2.3.1.1 "><p id="p8304194414212"><a name="p8304194414212"></a><a name="p8304194414212"></a>SvcStg Developer</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.57000000000001%" headers="mcps1.2.3.1.2 "><p id="p330416444422"><a name="p330416444422"></a><a name="p330416444422"></a>拥有该权限的用户只对本用户测试资源具有执行权限（如增删改查）。</p>
+</td>
+</tr>
+<tr id="row1530464410423"><td class="cellrowborder" valign="top" width="24.43%" headers="mcps1.2.3.1.1 "><p id="p7304164410429"><a name="p7304164410429"></a><a name="p7304164410429"></a>SvcStg Operator</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.57000000000001%" headers="mcps1.2.3.1.2 "><p id="p43046447424"><a name="p43046447424"></a><a name="p43046447424"></a>拥有该权限的用户只对本用户测试资源具有可读权限。</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >对于租户用户，默认具有admin权限，不需要额外配置，该权限配置仅针对租户下面的子用户。  
-
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>对于租户用户，默认具有admin权限，不需要额外配置，该权限配置仅针对租户下面的子用户。  
 
 ## 示例流程<a name="section1189416161520"></a>
 
