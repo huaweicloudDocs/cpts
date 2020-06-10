@@ -7,7 +7,6 @@
 ## 使用建议<a name="section7382659287"></a>
 
 -   用于压测资源组的节点不要运行任何应用或做其他用途，可能会导致应用运行异常。
--   确保节点所在集群的版本不高于v1.13，当前暂不支持v1.15。
 -   请根据需要压测的并发用户数，创建对应规格的节点，节点需要在云容器引擎服务中创建。
 
     至少创建2个节点，1个作为压测资源组的管理机（即管理执行机的节点），1个作为压测资源组的执行机（即在压测过程中能够提供自身性能数据的施压目标机器）。如需要压测外部服务，请为执行节点绑定弹性IP。
@@ -23,9 +22,9 @@
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row9971154141815"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p397265411180"><a name="p397265411180"></a><a name="p397265411180"></a>0-5,000</p>
+    <tbody><tr id="row9971154141815"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p397265411180"><a name="p397265411180"></a><a name="p397265411180"></a>0-5000</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p1310821632919"><a name="p1310821632919"></a><a name="p1310821632919"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p1310821632919"><a name="p1310821632919"></a><a name="p1310821632919"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p1068345512272"><a name="p1068345512272"></a><a name="p1068345512272"></a>1</p>
     </td>
@@ -35,9 +34,9 @@
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p692232272815"><a name="p692232272815"></a><a name="p692232272815"></a>1</p>
     </td>
     </tr>
-    <tr id="row76471156152913"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p1825272418356"><a name="p1825272418356"></a><a name="p1825272418356"></a>5,001-10,000</p>
+    <tr id="row76471156152913"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p1825272418356"><a name="p1825272418356"></a><a name="p1825272418356"></a>5001-10000</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p14255124143512"><a name="p14255124143512"></a><a name="p14255124143512"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p14255124143512"><a name="p14255124143512"></a><a name="p14255124143512"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p172581246355"><a name="p172581246355"></a><a name="p172581246355"></a>1</p>
     </td>
@@ -47,9 +46,9 @@
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p527132414353"><a name="p527132414353"></a><a name="p527132414353"></a>1</p>
     </td>
     </tr>
-    <tr id="row16318163884013"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p1447225519406"><a name="p1447225519406"></a><a name="p1447225519406"></a>10,001-20,000</p>
+    <tr id="row16318163884013"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p1447225519406"><a name="p1447225519406"></a><a name="p1447225519406"></a>10001-20000</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p7474125512402"><a name="p7474125512402"></a><a name="p7474125512402"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p7474125512402"><a name="p7474125512402"></a><a name="p7474125512402"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p13477185520401"><a name="p13477185520401"></a><a name="p13477185520401"></a>1</p>
     </td>
@@ -59,9 +58,9 @@
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1483755154017"><a name="p1483755154017"></a><a name="p1483755154017"></a>2</p>
     </td>
     </tr>
-    <tr id="row1792915173010"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p18209142713511"><a name="p18209142713511"></a><a name="p18209142713511"></a>20,001-30,000</p>
+    <tr id="row1792915173010"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p18209142713511"><a name="p18209142713511"></a><a name="p18209142713511"></a>20001-30000</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p1294161414392"><a name="p1294161414392"></a><a name="p1294161414392"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p1294161414392"><a name="p1294161414392"></a><a name="p1294161414392"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p221318277355"><a name="p221318277355"></a><a name="p221318277355"></a>1</p>
     </td>
@@ -71,9 +70,9 @@
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p12181527173511"><a name="p12181527173511"></a><a name="p12181527173511"></a>3</p>
     </td>
     </tr>
-    <tr id="row16730949112918"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p3935654173614"><a name="p3935654173614"></a><a name="p3935654173614"></a>30,001-40,000</p>
+    <tr id="row16730949112918"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p3935654173614"><a name="p3935654173614"></a><a name="p3935654173614"></a>30001-40000</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p14467151510395"><a name="p14467151510395"></a><a name="p14467151510395"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p14467151510395"><a name="p14467151510395"></a><a name="p14467151510395"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p2730649202918"><a name="p2730649202918"></a><a name="p2730649202918"></a>1</p>
     </td>
@@ -83,9 +82,9 @@
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p148451246102911"><a name="p148451246102911"></a><a name="p148451246102911"></a>4</p>
     </td>
     </tr>
-    <tr id="row199984546180"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p13999354191819"><a name="p13999354191819"></a><a name="p13999354191819"></a>40,001-50,000</p>
+    <tr id="row199984546180"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p13999354191819"><a name="p13999354191819"></a><a name="p13999354191819"></a>40001-50000</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p19919181616399"><a name="p19919181616399"></a><a name="p19919181616399"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p19919181616399"><a name="p19919181616399"></a><a name="p19919181616399"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p19683175511278"><a name="p19683175511278"></a><a name="p19683175511278"></a>1</p>
     </td>
@@ -95,9 +94,9 @@
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p243943193717"><a name="p243943193717"></a><a name="p243943193717"></a>5</p>
     </td>
     </tr>
-    <tr id="row1614914117387"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p1014913112382"><a name="p1014913112382"></a><a name="p1014913112382"></a>50,001以上</p>
+    <tr id="row1614914117387"><td class="cellrowborder" rowspan="2" valign="top" width="26.732673267326728%" headers="mcps1.2.4.1.1 "><p id="p1014913112382"><a name="p1014913112382"></a><a name="p1014913112382"></a>50001以上</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p951517361469"><a name="p951517361469"></a><a name="p951517361469"></a>管理节点：2U4G</p>
+    <td class="cellrowborder" valign="top" width="33.66336633663366%" headers="mcps1.2.4.1.2 "><p id="p951517361469"><a name="p951517361469"></a><a name="p951517361469"></a>管理节点：4U8G</p>
     </td>
     <td class="cellrowborder" valign="top" width="39.6039603960396%" headers="mcps1.2.4.1.3 "><p id="p151495117387"><a name="p151495117387"></a><a name="p151495117387"></a>1</p>
     </td>
@@ -105,7 +104,7 @@
     <tr id="row13312714143814"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1519536194616"><a name="p1519536194616"></a><a name="p1519536194616"></a>执行节点：8U16G</p>
     </td>
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p11313151433812"><a name="p11313151433812"></a><a name="p11313151433812"></a>n</p>
-    <div class="note" id="note442472317509"><a name="note442472317509"></a><a name="note442472317509"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p532418414498"><a name="p532418414498"></a><a name="p532418414498"></a>每台8U16G的执行节点可支撑10,000并发。</p>
+    <div class="note" id="note442472317509"><a name="note442472317509"></a><a name="note442472317509"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p532418414498"><a name="p532418414498"></a><a name="p532418414498"></a>每台8U16G的执行节点可支撑10000并发。</p>
     </div></div>
     </td>
     </tr>
@@ -130,8 +129,7 @@
     -   若CCE中无可用集群，请先创建集群。创建集群操作请参考[创建混合集群](https://support.huaweicloud.com/usermanual-cce/cce_01_0028.html)。集群创建成功后，再添加压测服务的管理机和执行机，如果使用混合云模式进行压测，则只需要添加管理机。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   压测外部应用（部署在其他VPC的应用、部署在线下或其他公有云上的应用）时，需确保资源组中执行机已绑定弹性IP。  
-    >-   新创建集群的版本选择v1.13，当前暂不支持v1.15。  
+    >压测外部应用（部署在其他VPC的应用、部署在线下或其他公有云上的应用）时，需确保资源组中执行机已绑定弹性IP。  
 
 
 ## 创建云容器CCE资源组<a name="section522445544217"></a>
@@ -173,7 +171,7 @@
     <tr id="row164531518181114"><td class="cellrowborder" valign="top" width="18.68%" headers="mcps1.2.3.1.1 "><p id="p7455101831110"><a name="p7455101831110"></a><a name="p7455101831110"></a>连接地址选择</p>
     </td>
     <td class="cellrowborder" valign="top" width="81.32000000000001%" headers="mcps1.2.3.1.2 "><p id="p12455121811115"><a name="p12455121811115"></a><a name="p12455121811115"></a>仅在使用混合云时，需要选择，主要目的是使管理节点和执行节点可以相互通信。</p>
-    <a name="ul1158161317145"></a><a name="ul1158161317145"></a><ul id="ul1158161317145"><li>外网地址：当管理节点和执行节点通过管理节点的弹性IP地址通信时，选择外网地址</li><li>内网地址：当管理节点和执行节点通过管理节点的私有IP地址通信时，选择内网地址</li><li>手动输入：当管理节点和执行节点即不是通过管理节点的弹性IP地址，也不是通过管理节点的私有IP地址通信时，选择手动输入</li></ul>
+    <a name="ul1158161317145"></a><a name="ul1158161317145"></a><ul id="ul1158161317145"><li>外网地址：当管理节点和执行节点通过管理节点的弹性IP地址通信时，选择外网地址。</li><li>内网地址：当管理节点和执行节点通过管理节点的私有IP地址通信时，选择内网地址。</li><li>手动输入：当管理节点和执行节点即不是通过管理节点的弹性IP地址，也不是通过管理节点的私有IP地址通信时，选择手动输入。</li></ul>
     </td>
     </tr>
     <tr id="row5445422161117"><td class="cellrowborder" valign="top" width="18.68%" headers="mcps1.2.3.1.1 "><p id="p1244562291118"><a name="p1244562291118"></a><a name="p1244562291118"></a>连接地址</p>
@@ -184,13 +182,13 @@
     <tr id="row3267555144212"><td class="cellrowborder" valign="top" width="18.68%" headers="mcps1.2.3.1.1 "><p id="p1526785517426"><a name="p1526785517426"></a><a name="p1526785517426"></a>执行节点</p>
     </td>
     <td class="cellrowborder" valign="top" width="81.32000000000001%" headers="mcps1.2.3.1.2 "><p id="p8267115514424"><a name="p8267115514424"></a><a name="p8267115514424"></a>执行压测的执行机，即在压测过程中能够提供自身性能数据的施压目标机器。</p>
-    <a name="ul986010674418"></a><a name="ul986010674418"></a><ul id="ul986010674418"><li>非混合云模式时，选择CCE的虚拟机节点</li><li>混合云模式时，选择“自动安装”，由管理节点为执行节点安装压测所需执行包，选择“手动安装”，您需要复制安装命令到您的节点中执行</li></ul>
+    <a name="ul986010674418"></a><a name="ul986010674418"></a><ul id="ul986010674418"><li>非混合云模式时，选择CCE的虚拟机节点。</li><li>混合云模式时，选择“自动安装”，由管理节点为执行节点安装压测所需执行包，选择“手动安装”，您需要复制安装命令到您的节点中执行。</li></ul>
     </td>
     </tr>
     <tr id="row1417614274312"><td class="cellrowborder" valign="top" width="18.68%" headers="mcps1.2.3.1.1 "><p id="p117634216438"><a name="p117634216438"></a><a name="p117634216438"></a>密码</p>
     </td>
     <td class="cellrowborder" valign="top" width="81.32000000000001%" headers="mcps1.2.3.1.2 "><p id="p22557171085"><a name="p22557171085"></a><a name="p22557171085"></a>仅在自动安装执行节点时，需要设置。</p>
-    <p id="p01761342114319"><a name="p01761342114319"></a><a name="p01761342114319"></a>使用“root”用户登录执行节点的密码</p>
+    <p id="p01761342114319"><a name="p01761342114319"></a><a name="p01761342114319"></a>使用“root”用户登录执行节点的密码。</p>
     </td>
     </tr>
     <tr id="row91612521717"><td class="cellrowborder" valign="top" width="18.68%" headers="mcps1.2.3.1.1 "><p id="p71001129989"><a name="p71001129989"></a><a name="p71001129989"></a>执行节点IP</p>
